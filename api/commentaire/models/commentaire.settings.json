@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentaires",
+  "info": {
+    "name": "commentaire",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "sujet": {
+      "model": "sujet",
+      "via": "commentaire"
+    }
+  }
+}
